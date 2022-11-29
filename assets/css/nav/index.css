@@ -1,0 +1,165 @@
+/*Contenedores*/
+.ct{
+    position: fixed;
+    width: 100%;
+}
+
+.ct__bg{
+    background: rgba(0, 0, 0, 0.904);
+}
+
+/*contenedor menu grid*/
+.ct__nav{
+    max-width: 78em;
+    margin: 0 auto;
+    padding: 1.25em;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Navbar grid*/
+
+nav{
+    width: 15em;
+    padding: 1.2em;
+    margin: 0 0.625em 0 0;
+    background: #e077ee5e;
+    border-radius: 15px;
+}
+
+.nav{
+    position: fixed;
+    top: -40em;
+    right: 0;
+    transition: top 700ms ease-out;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav__item{
+    list-style: none;
+    text-align: start;
+    padding: 0.625em 0;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-toggle{
+    top: 7em;
+}
+
+/*Sub navbar grid*/
+.nav__link i{
+    padding: 0 0 0 0.2em;
+}
+
+.subMenu{
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.subMenu__d-block{
+    position: relative;
+    margin: 1.2em;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all 1s ease-in-out;
+}
+
+.fas{
+    transform: rotate(0deg);
+    transition: all 500ms ease-in-out;
+}
+
+.rotate_down{
+    transform: rotate(90deg);
+    transition: all 500ms ease-in-out;
+}
+
+/*Icono menu*/
+
+.icon i{
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    padding: 0.625rem;
+    color: #fff;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.icon__none{
+    display: none;
+}
+
+
+/*Img*/
+.ct__img{
+    width: 3em;
+    height: 3em;
+}
+
+.img-logo{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width:1250px) {
+    /*Iconos*/
+    .icon{
+        display: none;
+    }
+
+    /*Menu*/
+    nav{
+        width: 100%;
+        background: none;
+        border-radius: 0;
+    }
+
+    .nav{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .nav__links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__item{
+        margin: 0 1.2em 0 0;
+        padding: 0 0.8em;
+    }
+
+    .nav__link{
+        color: #fff;
+    }
+
+    .nav__link:hover{
+        color: #e077ee;
+    }
+
+    /*Submenu*/
+    .subMenu__d-block{
+        position: fixed;
+        top:6.2em;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .nav__item-sub{
+        margin: 0;
+        padding: 1.2em 0.8em;
+        background: rgba(0, 0, 0, 0.76);
+    }
+}
