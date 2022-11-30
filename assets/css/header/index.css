@@ -7,14 +7,20 @@
 
 .hero__bg{
     background: linear-gradient(150deg,#e077ee91,rgba(0, 0, 0, 0.815)),
-    url(../../img/headerPerro.jpg) no-repeat top right fixed;
+    url(../../img/headerPerro.jpg) no-repeat fixed;
+    background-position: 68%;
     background-size: cover;
+    max-height: 100vh;
+}
+
+.st__bg-black{
+    display: none;
 }
 
 /*textos y espaciado*/
 .line{
     height: 5px;
-    width: 95%;
+    width: 20em;
     margin: 0.4em 0;
     background: #e077ee;
     border: 0;
@@ -24,12 +30,14 @@
     font-size: 4em;
     line-height: 1em;
     color: rgba(255, 255, 255, 0.952);
+    max-width: 12.5rem;
 }
 
 .hero div p{
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.719);
     line-height: 1.2em;
+    max-width: 25rem;
 }
 
 /*area de telefono*/
@@ -103,6 +111,18 @@
         transform: rotateX(180deg);
     }
 
+}
+
+@media screen and (min-width:768px) {
+    /*contenedores*/
+    .hero__bg{
+        background-position: 80%;
+    }
+
+    /*SVG Decoracion lineas*/
+    .svg-indicador{
+        right: 3rem;
+    }
 }
 
 @media screen and (max-width:350px) {

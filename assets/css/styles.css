@@ -1,5 +1,6 @@
 @import url('./nav/index.css');
 @import url('./header/index.css');
+@import url('./profesionales/index.css');
 *{
     padding: 0;
     margin: 0;
@@ -31,12 +32,57 @@ h2{
 
 /*Contenedores generales*/
 
+.st{
+    width: 100%;
+    padding: 5em 0;
+}
+
 .st__w-100{
     max-width:70em;
     margin: 0 auto;
-    padding: 1.25em;
+    padding: 0 1.25em;
 }
 
+.st__grid-column{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.st__d-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,30em), 1fr));
+    gap: 2em;
+}
+
+.st__img{
+    max-width: 30em;
+    margin: 0 auto;
+    padding: 1.2em 0;
+}
+
+/*Textos generales*/
+
+.st__grid-column h2{
+    font-size: 1.6em;
+    margin: 2rem 0 0 0;
+}
+
+.st__grid-column h2 b,
+.st__grid-column p b{
+    color: #e077eed5;
+}
+
+.st__grid-column p{
+    font-size: 0.9em;
+    max-width: 31.25rem;
+    text-align: left;
+    padding: 0.625rem 0 0 0;
+}
+
+/*btn general*/
 .btn{
     font-size: 1.2em;
     padding: 0.625rem;
@@ -48,6 +94,18 @@ h2{
 }
 
 @media screen and (max-width:350px){
+
+    /*Textos generales*/
+
+    .st__grid-column h2{
+        font-size: 1.2em;
+    }
+
+    .st__grid-column p{
+        font-size: 0.6em;
+        max-width: 31.25rem;
+    }
+
     .btn{
         font-size: 0.8em;
     }

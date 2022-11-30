@@ -23,7 +23,8 @@ const subList = document.getElementById('subList');
 const subMenu = document.getElementById('subMenu');
 const iconRotate = document.getElementById('icon_rotate')
 
-function mostrarSubMenu(){
+function mostrarSubMenu(e){
+    e.preventDefault();
     subMenu.classList.toggle('subMenu__d-block');
     iconRotate.classList.toggle('rotate_down');
 }
