@@ -1,0 +1,16 @@
+.st__p{
+    padding: 4em 0 10em 0;    
+}
+
+.st__bg-servicio{
+    background: linear-gradient(115deg,#e077ee23,#e077eed5);
+}
+
+.st__servicios{
+    text-align: center;
+}
+
+.st__servicios h2{
+    font-size: 2em;
+    padding: 0 0 1.2rem 0;
+}

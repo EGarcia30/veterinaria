@@ -1,6 +1,9 @@
 @import url('./nav/index.css');
 @import url('./header/index.css');
 @import url('./profesionales/index.css');
+@import url('./servicios/index.css');
+@import url('./swiper/index.css');
+
 *{
     padding: 0;
     margin: 0;

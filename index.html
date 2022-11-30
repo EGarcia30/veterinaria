@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--SLIDER SWIPER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <!--Estilo de fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,13 +41,13 @@
             <nav id="nav" class="nav">
                 <ul class="nav__links">
                     <li class="nav__item">
-                        <a href="#" class="nav__link active">Inicio</a>
+                        <a href="#inicio" class="nav__link active">Inicio</a>
                     </li>
                     <li class="nav__item">
                         <a id="subList" href="#" class="nav__link">Conócenos <i id="icon_rotate" class="fas fa-caret-right"></i></a>
                         <ul id="subMenu" class="subMenu">
                             <li class="nav__item nav__item-sub">
-                                <a href="#" class="nav__link">Saber más</a>
+                                <a href="#conocer" class="nav__link">Saber más</a>
                             </li>
                             <li class="nav__item nav__item-sub">
                                 <a href="#" class="nav__link">Galeria</a>
@@ -55,7 +58,7 @@
                         </ul>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Servicios</a>
+                        <a href="#servicios" class="nav__link">Servicios</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="nav__link">Blog</a>
@@ -69,7 +72,7 @@
     </div>
 
     <!--header-->
-    <header class="hero hero__bg">
+    <header id="inicio" class="hero hero__bg">
         <div class="st__w-100">
             <img src="./assets/img/decoracionLineas.svg" alt="decoracion"
             class="svg-lineas">
@@ -88,9 +91,9 @@
         </div>
     </header>
 
-    <!--Profesionales-->
     <main>
-        <div class="st">
+        <!--Profesionales-->
+        <div id="conocer" class="st">
             <div class="st__w-100 st__d-grid">
                 <div class="st__grid-column">
                     <h2>Equipo de <b>Profesionales</b></h2>
@@ -102,9 +105,104 @@
                 </div>
             </div>
         </div>
+
+        <!--Servicios-->
+        <section id="servicios" class="st__p st__bg-servicio">
+            <div class="st__w-100 st__servicios">
+                <h2>Servicios</h2>
+            </div>
+        </section>
+
+        <!--Slider de servicios-->
+        <div class="st">
+            <!-- Slider main container -->
+            <div class="st__swiper">
+                <div id="swiper" class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/img/servicios/servicio1.jpg" alt="consulta">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Consulta Veterinaria</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>En nuestra consulta veterinaria nos encargamos de explorar a todo tipo de animales domésticos y exóticos. </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/servicios/servicio2.jpg" alt="medicina">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Medicina Preventiva</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        La salud de tu mascota a largo plazo depende de la prevención o detección de enfermedades rápidamente.
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/servicios/servicio3.jpg" alt="radiologia">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Servicio de radiologia</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        En nuestra clínica contamos con un equipo de Rayos X con el que ofrecemos un servicio de radiología.
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/servicios/servicio4.jpg" alt="analisis">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Analisis</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        También podemos realizar cualquier tipo de análisis a su mascota ya que lo gestionamos desde nuestra consulta. Análisis sanguíneos.
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!--Javascript puro-->
     <script src="./assets/js/scripts.js"></script>
+
+        <!--Slider Swiper-->
+        <script src="./assets/js/swiper.js"></script>
 </body>
 </html>
