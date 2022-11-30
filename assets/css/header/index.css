@@ -1,0 +1,138 @@
+/*contenedores*/
+.hero{
+    position: relative;
+    width: 100%;
+    padding: 14em 0;
+}
+
+.hero__bg{
+    background: linear-gradient(150deg,#e077ee91,rgba(0, 0, 0, 0.815)),
+    url(../../img/headerPerro.jpg) no-repeat top right fixed;
+    background-size: cover;
+}
+
+/*textos y espaciado*/
+.line{
+    height: 5px;
+    width: 95%;
+    margin: 0.4em 0;
+    background: #e077ee;
+    border: 0;
+}
+
+.hero div h1{
+    font-size: 4em;
+    line-height: 1em;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+.hero div p{
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.719);
+    line-height: 1.2em;
+}
+
+/*area de telefono*/
+.m-1{
+    margin: 1em 0;
+}
+
+.hero div i{
+    padding: 0 0.625em 0 0;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.hero div a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+/*boton escribenos*/
+.btn-escribenos{
+    transition: all 1s ease;
+    transition: transform 200ms linear;
+}
+
+.btn-escribenos:is(:hover, :active){
+    background: #e077eed5;
+    color: #000;
+    box-shadow: 0 0 0 2px #e077eed5,
+    0 0 20px #e077eed5,
+    0 0 40px #e077eed5;
+}
+
+.btn-escribenos:active{
+    transform: scale(0.8);
+}
+
+/*SVG Decoracion lineas*/
+
+.svg-lineas{
+    position: absolute;
+    top: 7em;
+    right: 1.5em;
+    transform: rotate(80deg);
+}
+
+.svg-marcador{
+    position: absolute;
+    padding: 1.2em;
+    margin: 1em 0 0 0;
+    width: 65px;
+    overflow: hidden;
+    transform: rotate(-110deg);
+}
+
+.svg-indicador{
+    position: absolute;
+    bottom: 10rem;
+    right: 1.5rem;
+    width: 20px;
+    transform: rotate(180deg);
+    animation: slideDown 3s infinite ease-out;
+}
+
+@keyframes slideDown{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        bottom: 5em;
+        transform: rotateX(180deg);
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    /*textos y espaciado*/
+    .line{
+        width: 60%;
+        margin: 0.4em auto;
+    }
+
+    .hero div{
+        text-align: center;
+    }
+
+    .hero div h1{
+        font-size: 2.5em;
+        max-width: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .hero div p{
+        font-size: 0.8em;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .svg-marcador{
+        overflow: hidden;
+        left: 2em;
+        bottom: 11em;
+        transform: rotate(0);
+    }
+}
