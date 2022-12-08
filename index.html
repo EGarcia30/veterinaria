@@ -38,6 +38,7 @@
             <div id="icon_close" class="icon icon__none">
                 <i class="fas fa-times"></i>
             </div>
+            <div id="back_menu"></div>
             <nav id="nav" class="nav">
                 <ul class="nav__links">
                     <li class="nav__item">
@@ -61,10 +62,10 @@
                         <a href="#servicios" class="nav__link">Servicios</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Blog</a>
+                        <a href="#blog" class="nav__link">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Contacto</a>
+                        <a href="#contacto" class="nav__link">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -188,15 +189,143 @@
                     <div class="swiper-pagination"></div>
                 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <!--<div class="swiper-button-prev"></div>-->
+                    <!--<div class="swiper-button-next"></div>-->
                 
                     <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <!--<div class="swiper-scrollbar"></div>-->
                 </div>
             </div>
         </div>
+
+        <!--Blog-->
+        <section id="blog" class="st__p st__bg-servicio">
+            <div class="st__w-100 st__servicios">
+                <h2>Blog</h2>
+            </div>
+        </section>
+
+        <!--Slider de Blog-->
+        <div class="st">
+            <!-- Slider main container -->
+            <div class="st__swiper">
+                <div id="swiper-two" class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./assets/img/blog/blog1.jpg" alt="consulta">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>¿De verdad conoces a tu perro?</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>Es importante saber interpretar las señales que nuestros perros nos envían día a día ya que, algunas de ellas, pueden requerir que acudas rápidamente a tu clínica</p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/blog/blog2.jpg" alt="medicina">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Las vacaciones y tus mascotas no son compatibles</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        Si buscas clínica veterinaria en Egües seguramente seas una persona que se preocupa por el cuidado de los más peludos del hogar, pero no nos olvidamos de ellos en
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/blog/blog3.jpg" alt="radiologia">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>Los cuidados básicos que debes ofrecerle a tu perro</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        En muchas ocasiones, no conocer los cuidados necesarios que todo perro necesita es la causa de que tengas que acudir a una clínica veterinaria en Pamplona.
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/blog/blog4.jpg" alt="blog4">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h3>¿Sabes que vacunas debe tener tu perro?</h3>
+                                </div>
+                                <div class="card-text">
+                                    <p>
+                                        Si tienes una mascota en casa debes ser muy cuidadoso con las cuestiones médicas. En nuestra clínica veterinaria en Pamplona podemos atenderla siempre que
+                                    </p>
+                                </div>
+                                <button class="btn btn-swiper">
+                                    Leer más
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <!--<div class="swiper-button-prev"></div>-->
+                    <!--<div class="swiper-button-next"></div>-->
+                
+                    <!-- If we need scrollbar -->
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div>
+            </div>
+        </div>
+
+        <!--Contacto-->
+        <div id="contacto" class="st">
+            <div class="st__w-100">
+                <div class="st__contact">
+                    <h2> <b>Contacta</b> con nosotros <img src="./assets/img/correo-electronico.png" alt="correo-electronico" class="icon icon-contact"> </h2>
+                    <form class="frm__contact" action="#" method="post">
+                        <label for="nombre">Tu nombre:</label>
+                        <input type="text" placeholder="Erick" name="nombre">
+
+                        <label for="correo">Tu Correo:</label>
+                        <input type="text" name="correo" placeholder="@gmail.com">
+
+                        <label for="servicio">¿Servicio que buscas?</label>
+                        <input type="text" name="servicio" placeholder="Limpieza de mascota">
+
+                        <label for="mensaje">Tu mensaje(Opcional):</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+                        <button type="submit" class="btn btn-escribenos mt-1">Enviar</button>
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>
     </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="st__footer">
+            <div>
+                <div class="st__titles">
+                    <p>Creado por <b>Erick Penado</b> - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!--Javascript puro-->

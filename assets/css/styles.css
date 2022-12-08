@@ -23,6 +23,16 @@ h1{
     font-weight: 700;
 }
 
+label{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+input{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
 h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -37,7 +47,7 @@ h2{
 
 .st{
     width: 100%;
-    padding: 5em 0;
+    padding: 8em 0;
 }
 
 .st__w-100{
@@ -95,6 +105,118 @@ h2{
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*FRM CONTACTO*/
+
+.st__contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.890);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.icon-contact{
+    display: inline-block;
+    width: 30px;
+    animation: rotateIcon 5s ease-out infinite;
+}
+
+@keyframes rotateIcon{
+    0%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+.frm__contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+.frm__contact label{
+    font-size: 1.2em;
+    color: #e077eed5;
+}
+
+.frm__contact input{
+    display: block;
+    margin: 0 0 3em 0;
+    padding: 0.5em 0;
+    border-radius: 10px;
+}
+
+.frm__contact input:focus {
+    outline: 1px solid #e077eed5;
+    padding: 0.5em 1em;
+}
+
+.frm__contact textarea:focus {
+    outline: 1px solid #e077eed5;
+    padding: 0.5em 1em;
+}
+
+.frm__contact input::placeholder{
+    padding:  0 0 0 0.625em;
+}
+
+.st__contact h2{
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+}
+
+.st__contact h2 b{
+    color: #e077eed5;
+}
+
+.mt-1{
+    margin: 1em 0 0 0;
+}
+
+/*FOOTER*/
+
+.footer{
+    padding: 2em 0;
+    background: rgba(0, 0, 0, 0.890);
+}
+
+.st__footer{
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.st__titles p{
+    font-size: 0.7em;
+    color: #fff;
+}
+
+.st__titles p b{
+    color: #e077eed5;
+}
+
+@media screen and (min-width:1250px) {
+    .st__contact h2{
+        font-size: 2.8em;
+    }
+
+    .frm__contact label{
+        font-size: 2em;
+    }
+    
+}
+
 
 @media screen and (max-width:350px){
 

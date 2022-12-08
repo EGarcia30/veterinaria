@@ -2,21 +2,25 @@
 const menuIcon = document.getElementById('icon_menu');
 const closeIcon = document.getElementById('icon_close');
 const navList = document.getElementById('nav');
+const backMenu = document.getElementById('back_menu');
 
 function Mostrar(){
     navList.classList.toggle('nav-toggle');
     closeIcon.classList.remove('icon__none')
     menuIcon.classList.toggle('icon__none');
+    backMenu.style.display = "block";
 }
 
 function Ocultar(){
     navList.classList.remove('nav-toggle');
     closeIcon.classList.toggle('icon__none');
     menuIcon.classList.remove('icon__none');
+    backMenu.style.display = "none";
 }
 
 menuIcon.addEventListener('click', Mostrar);
 closeIcon.addEventListener('click', Ocultar);
+backMenu.addEventListener('click', Ocultar);
 
 //Evento Sub menu lista desplegar y ocultar(en desktop)
 const subList = document.getElementById('subList');

@@ -1,10 +1,4 @@
-const slideServicio = document.getElementById('swiper');
-
-var swiper = new Swiper(slideServicio, {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
+var swiper = new Swiper('.swiper', {
         slidesPerView: 1,
         spaceBetween: 10,
         // init: false,
